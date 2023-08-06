@@ -52,7 +52,7 @@ do
       else
         # print if equal , conditionally update best game and exit
         echo -e "\nYou guessed it in $ROUND tries. The secret number was $NUMBER. Nice job!"
-        if [[ -z $BEST_GUESS || $ROUND -lt $BEST_GUESS ]]
+        if [[ -z $BEST_GAME || $ROUND -lt $BEST_GAME ]]
         then
           UPDATE_BEST_GUESS=$($PSQL "update users set best_game=$ROUND where user_id=$USER_ID")
         fi
