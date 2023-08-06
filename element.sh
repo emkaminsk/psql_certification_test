@@ -1,5 +1,5 @@
 #!/bin/bash
-PSQL="psql --username=freecodecamp --dbname=periodic_table -t --no-align -c"
+PSQL="psql --username=marcin --dbname=periodic_table -t --no-align -c"
 # test the parameter
 if [[ -z $1 ]]
 then
